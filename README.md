@@ -1,80 +1,95 @@
-📌 Movie Recommendation System
+🎬 Movie Recommendation System
 
-A machine learning-based movie recommendation system built using the MovieLens dataset. This project combines content-based filtering and regression modeling to predict user preferences and recommend movies.
+A machine learning-based movie recommendation system built on the MovieLens dataset, combining content-based filtering and regression modeling to predict user preferences and recommend movies.
 
 🚀 Features
 
-Content-based feature engineering (genres + genome tags)
+✨ Key highlights of the system:
 
-User profile construction using sparse matrix
+🎯 Content-based feature engineering (genres + genome tags)
 
-Interaction-based feature modeling
+👤 User profile construction using sparse matrix multiplication
 
-Regression-based rating prediction (SGDRegressor)
+🔗 Interaction-based feature modeling (user × movie)
 
-Batch training for scalability
+📈 Regression-based rating prediction using SGDRegressor
 
-CLI-based recommendation system
+⚡ Batch training for scalability on large datasets
+
+💻 CLI-based recommendation interface
 
 🧠 Tech Stack
-
-Python
-
-NumPy, Pandas
-
-Scikit-learn
-
-SciPy
-
+Category	Tools
+Language	Python
+Data Processing	NumPy, Pandas
+Machine Learning	Scikit-learn
+Sparse Matrix	SciPy
 📂 Project Structure
 movie-recommendation-system/
 │
-├── data/                # Dataset
-├── models/              # Saved models
+├── data/                # Raw dataset (MovieLens)
+│
+├── models/              # Saved artifacts
+│   ├── model.pkl
+│   ├── movie_features.pkl
+│   └── user_profiles.pkl
+│
 ├── src/                 # Core modules
 │   ├── build_features.py
 │   ├── user_profile.py
 │   └── recommend.py
 │
-├── train.py             # Train model
-├── recommend_cli.py     # Run recommendation
+├── train.py             # Training pipeline
+├── recommend_cli.py     # CLI for recommendation
 ├── requirements.txt
 └── README.md
 ⚙️ How to Run
 1️⃣ Install dependencies
 pip install -r requirements.txt
-2️⃣ Train model
+2️⃣ Train the model
 python train.py
-3️⃣ Get recommendation
+3️⃣ Get recommendations
 python recommend_cli.py --user_id 10
-📊 Model
+📊 Model Overview
+🔹 Input Features
 
-Input features:
+🎬 Movie feature vector (genres + tags)
 
-Movie features
+👤 User profile vector
 
-User profile
+🔗 Interaction features (element-wise multiplication)
 
-Interaction (element-wise multiplication)
+🔹 Model
 
-Model:
+SGDRegressor (Scikit-learn)
 
-SGDRegressor
+Supports incremental learning (partial_fit) for large-scale data
 
 📈 Evaluation Metrics
 
-MAE
+The model is evaluated using:
 
-MSE
+📉 Mean Absolute Error (MAE)
 
-R² Score
+📉 Mean Squared Error (MSE)
+
+📊 R² Score
 
 🔮 Future Improvements
 
-Add Precision@K, Recall@K
+🚧 Planned enhancements:
 
-Matrix Factorization (ALS, SVD)
+📌 Add Precision@K and Recall@K
 
-Neural Collaborative Filtering
+🎯 Implement Matrix Factorization (ALS, SVD)
 
-Deploy as API (FastAPI)
+🧠 Explore Neural Collaborative Filtering
+
+🌐 Deploy as REST API using FastAPI
+
+💡 Highlights
+
+✔️ Combines content-based filtering + ML model
+✔️ Uses real-world MovieLens dataset
+✔️ Designed with modular, production-style structure
+✔️ Ready for ML Engineer portfolio projects
