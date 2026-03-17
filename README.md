@@ -25,6 +25,8 @@ Data Processing	NumPy, Pandas
 Machine Learning	Scikit-learn
 Sparse Matrix	SciPy
 # 📂 Project Structure
+
+```
 movie-recommendation-system/
 │
 ├── data/                # Raw dataset (MovieLens)
@@ -43,13 +45,24 @@ movie-recommendation-system/
 ├── recommend_cli.py     # CLI for recommendation
 ├── requirements.txt
 └── README.md
+```
+
 # ⚙️ How to Run
 ## 1️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
+
 ## 2️⃣ Train the model
+```bash
 python train.py
+```
+
 ## 3️⃣ Get recommendations
+```bash
 python recommend_cli.py --user_id 10
+```
+
 # 📊 Model Overview
 🔹 Input Features
 
