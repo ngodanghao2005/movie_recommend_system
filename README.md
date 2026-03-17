@@ -103,6 +103,9 @@ The model is evaluated using:
 # 💡 Highlights
 
 ✔️ Combines content-based filtering + ML model
+
 ✔️ Uses real-world MovieLens dataset
+
 ✔️ Designed with modular, production-style structure
+
 ✔️ Ready for ML Engineer portfolio projects
