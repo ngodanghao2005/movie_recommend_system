@@ -4,26 +4,27 @@ A machine learning-based movie recommendation system built on the MovieLens data
 
 # 🚀 Features
 
-✨ Key highlights of the system:
+Key highlights of the system:
 
-🎯 Content-based feature engineering (genres + genome tags)
+- 🎯 Content-based feature engineering (genres + genome tags)
 
-👤 User profile construction using sparse matrix multiplication
+- 👤 User profile construction using sparse matrix multiplication
 
-🔗 Interaction-based feature modeling (user × movie)
+- 🔗 Interaction-based feature modeling (user × movie)
 
-📈 Regression-based rating prediction using SGDRegressor
+- 📈 Regression-based rating prediction using SGDRegressor
 
-⚡ Batch training for scalability on large datasets
+- ⚡ Batch training for scalability on large datasets
 
 💻 CLI-based recommendation interface
 
 # 🧠 Tech Stack
-Category	Tools
-Language	Python
-Data Processing	NumPy, Pandas
-Machine Learning	Scikit-learn
-Sparse Matrix	SciPy
+| Category | Tools |
+|----------|--------|
+| Language | Python |
+| Data Processing | NumPy, Pandas |
+| Machine Learning | Scikit-learn |
+| Sparse Matrix | SciPy |
 # 📂 Project Structure
 
 ```
