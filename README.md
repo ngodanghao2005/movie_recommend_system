@@ -16,7 +16,7 @@ Key highlights of the system:
 
 - ⚡ Batch training for scalability on large datasets
 
-💻 CLI-based recommendation interface
+- 💻 CLI-based recommendation interface
 
 # 🧠 Tech Stack
 | Category | Tools |
@@ -65,41 +65,41 @@ python recommend_cli.py --user_id 10
 ```
 
 # 📊 Model Overview
-🔹 Input Features
+## 🔹 Input Features
 
-🎬 Movie feature vector (genres + tags)
+- Movie feature vector (genres + tags)
 
-👤 User profile vector
+- User profile vector
 
-🔗 Interaction features (element-wise multiplication)
+- Interaction features (element-wise multiplication)
 
-🔹 Model
+## 🔹 Model
 
-SGDRegressor (Scikit-learn)
+- SGDRegressor (Scikit-learn)
 
-Supports incremental learning (partial_fit) for large-scale data
+- Supports incremental learning (partial_fit) for large-scale data
 
 # 📈 Evaluation Metrics
 
 The model is evaluated using:
 
-📉 Mean Absolute Error (MAE)
+- 📉 Mean Absolute Error (MAE)
 
-📉 Mean Squared Error (MSE)
+- 📉 Mean Squared Error (MSE)
 
-📊 R² Score
+- 📊 R² Score
 
 # 🔮 Future Improvements
 
-🚧 Planned enhancements:
+Planned enhancements:
 
-📌 Add Precision@K and Recall@K
+- 📌 Add Precision@K and Recall@K
 
-🎯 Implement Matrix Factorization (ALS, SVD)
+- 🎯 Implement Matrix Factorization (ALS, SVD)
 
-🧠 Explore Neural Collaborative Filtering
+- 🧠 Explore Neural Collaborative Filtering
 
-🌐 Deploy as REST API using FastAPI
+- 🌐 Deploy as REST API using FastAPI
 
 # 💡 Highlights
 
