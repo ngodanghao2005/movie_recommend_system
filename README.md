@@ -1,8 +1,8 @@
-🎬 Movie Recommendation System
+# 🎬 Movie Recommendation System
 
 A machine learning-based movie recommendation system built on the MovieLens dataset, combining content-based filtering and regression modeling to predict user preferences and recommend movies.
 
-🚀 Features
+# 🚀 Features
 
 ✨ Key highlights of the system:
 
@@ -18,13 +18,13 @@ A machine learning-based movie recommendation system built on the MovieLens data
 
 💻 CLI-based recommendation interface
 
-🧠 Tech Stack
+# 🧠 Tech Stack
 Category	Tools
 Language	Python
 Data Processing	NumPy, Pandas
 Machine Learning	Scikit-learn
 Sparse Matrix	SciPy
-📂 Project Structure
+# 📂 Project Structure
 movie-recommendation-system/
 │
 ├── data/                # Raw dataset (MovieLens)
@@ -43,14 +43,14 @@ movie-recommendation-system/
 ├── recommend_cli.py     # CLI for recommendation
 ├── requirements.txt
 └── README.md
-⚙️ How to Run
-1️⃣ Install dependencies
+# ⚙️ How to Run
+## 1️⃣ Install dependencies
 pip install -r requirements.txt
-2️⃣ Train the model
+## 2️⃣ Train the model
 python train.py
-3️⃣ Get recommendations
+## 3️⃣ Get recommendations
 python recommend_cli.py --user_id 10
-📊 Model Overview
+# 📊 Model Overview
 🔹 Input Features
 
 🎬 Movie feature vector (genres + tags)
@@ -65,7 +65,7 @@ SGDRegressor (Scikit-learn)
 
 Supports incremental learning (partial_fit) for large-scale data
 
-📈 Evaluation Metrics
+# 📈 Evaluation Metrics
 
 The model is evaluated using:
 
@@ -75,7 +75,7 @@ The model is evaluated using:
 
 📊 R² Score
 
-🔮 Future Improvements
+# 🔮 Future Improvements
 
 🚧 Planned enhancements:
 
@@ -87,7 +87,7 @@ The model is evaluated using:
 
 🌐 Deploy as REST API using FastAPI
 
-💡 Highlights
+# 💡 Highlights
 
 ✔️ Combines content-based filtering + ML model
 ✔️ Uses real-world MovieLens dataset
