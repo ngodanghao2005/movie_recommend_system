@@ -2,6 +2,10 @@
 
 A machine learning-based movie recommendation system built on the MovieLens dataset, combining content-based filtering and regression modeling to predict user preferences and recommend movies.
 
+# 📊 Datasets
+
+Download MovieLens Dataset from this link: https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset
+
 # 🚀 Features
 
 Key highlights of the system:
@@ -32,18 +36,13 @@ movie-recommendation-system/
 │
 ├── data/                # Raw dataset (MovieLens)
 │
-├── models/              # Saved artifacts
-│   ├── model.pkl
-│   ├── movie_features.pkl
-│   └── user_profiles.pkl
-│
 ├── src/                 # Core modules
 │   ├── build_features.py
 │   ├── user_profile.py
 │   └── recommend.py
 │
 ├── train.py             # Training pipeline
-├── recommend_cli.py     # CLI for recommendation
+├── client.py     # CLI for recommendation
 ├── requirements.txt
 └── README.md
 ```
@@ -61,7 +60,7 @@ python train.py
 
 ## 3️⃣ Get recommendations
 ```bash
-python recommend_cli.py --user_id 10
+python client.py --user_id 10
 ```
 
 # 📊 Model Overview
